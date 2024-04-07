@@ -1,0 +1,17 @@
+.door {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: chocolate;
+  padding: 15px;
+
+  /* * temp */
+  width: 200px;
+  height: 310px;
+
+}
+
+.number {
+  font-size: 3rem;
+
+}
