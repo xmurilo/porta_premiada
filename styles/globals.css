@@ -35,6 +35,9 @@
   --callout-border-rgb: 172, 175, 176;
   --card-rgb: 180, 185, 188;
   --card-border-rgb: 131, 134, 135;
+
+  --area-door-height: 310px;
+  --area-door-width: 200px;
 }
 
 @media (prefers-color-scheme: dark) {
