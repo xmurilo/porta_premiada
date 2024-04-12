@@ -6,9 +6,9 @@ export default class DoorModel {
 
   constructor(
     number: number,
-    hasGift: boolean = false,
-    selected: boolean = false,
-    open: boolean = false,
+    hasGift = false,
+    selected = false,
+    open = false,
   ) {
     this.number = number;
     this.hasGift = hasGift;
