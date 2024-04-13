@@ -9,6 +9,22 @@ import DoorModel from "@/model/Door";
 export default function Game() {
   const router = useRouter()
   const [doors, setDoors] = useState<DoorModel[]>([]);
+  const [valid, setValid] = useState(false);
+
+  useEffect(() => {
+    if(!router.query.doors || !router.query.hasGift) return
+    const doors = +router.query.doors
+    const hasGift = +router.query.hasGift
+
+    if(doors && hasGift) {
+      const qttValiddDoors = doors >= 3 && doors <= 100
+      const qttValidGift = hasGift >= 1 && hasGift <= doors
+      setValid(qttValiddDoors && qttValidGift)
+    } else {
+      setValid(false)
+    }
+  },[doors])
+
   useEffect(() => {
     let doors = 0;
     let hasGift = 0;
@@ -20,7 +36,7 @@ export default function Game() {
   },[router?.query])
 
   function renderDoors() {
-    return doors.map(door => {
+    return valid && doors.map(door => {
       return (
         <Door
           key={door.number_}
@@ -30,9 +46,12 @@ export default function Game() {
       );
     });
   }
+
   return (
     <main id={styles.game}>
-      <div className={styles.doors}>{renderDoors()}</div>
+      <div className={styles.doors}>
+        {valid ? renderDoors() : <h1>Valores inválidos</h1>}
+        </div>
       <div className={styles.buttons}>
         <Link href="/">
           <button>Reiniciar Jogo</button>
