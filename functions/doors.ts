@@ -1,6 +1,7 @@
 import DoorModel from "@/model/Door";
 
 
+// Essa funcao vai criar as portas e retornar um array de portas com a quantidade e a porta selecionada
 export function createDoors(qtd:number, selected:number):DoorModel[] {
     return Array.from({length: qtd}, (_, i) => {
         const number = i + 1;
