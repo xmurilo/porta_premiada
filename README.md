@@ -22,14 +22,14 @@ npm run dev
 ## The Home screen
 You can see the first screen of the game below where you can select the quantity of doors you want to generate and the door that will have the gift.
 ![first img](/public/first_img.png)
-=============================================
+# 
 
 ## The generated doors
 
 This are the doors generated, you can click in the door to highlight it and then click in the knob to open the door.
 ![second img](/public/second_img.png)
 ![third img](/public/third_img.png)
-=============================================
+# 
 
 
 
@@ -38,7 +38,7 @@ You can click in the knob to open the door and see if you won or not!
 
 OBS: You dont need to highlight the door to open it, you can click in the knob directly
 ![fourth img](/public/fourth_img.png)
-=============================================
+# 
 
 # Technologies used
 - Next.js
