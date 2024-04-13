@@ -31,7 +31,7 @@ export default function Form() {
           />
         </Card>
         <Card bgcolor="#28a085">
-          <Link href={`/game/${doorsQtt}/${withGift}`} className={styles.link}>
+          <Link href={`/game/${doorsQtt}/${withGift}`} className={styles.link} passHref>
             <h2>Iniciar</h2>
           </Link>
         </Card>
