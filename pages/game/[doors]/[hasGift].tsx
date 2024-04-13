@@ -53,7 +53,7 @@ export default function Game() {
         {valid ? renderDoors() : <h1>Valores inválidos</h1>}
         </div>
       <div className={styles.buttons}>
-        <Link href="/">
+        <Link href="/" passHref>
           <button>Reiniciar Jogo</button>
         </Link>
       </div>
