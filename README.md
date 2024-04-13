@@ -29,7 +29,7 @@ You can see the first screen of the game below where you can select the quantity
 This are the doors generated, you can click in the door to highlight it and then click in the knob to open the door.
 ![second img](/public/second_img.png)
 ![third img](/public/third_img.png)
-# =================
+# =====================================================================================
 
 
 
@@ -38,32 +38,7 @@ You can click in the knob to open the door and see if you won or not!
 
 OBS: You dont need to highlight the door to open it, you can click in the knob directly
 ![fourth img](/public/fourth_img.png)
-# =================
-
-<!-- {
-  "name": "prota_premiada2",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "react": "^18",
-    "react-dom": "^18",
-    "next": "14.1.4"
-  },
-  "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "eslint": "^8",
-    "eslint-config-next": "14.1.4"
-  }
-} -->
+# =====================================================================================
 
 # Technologies used
 - Next.js
