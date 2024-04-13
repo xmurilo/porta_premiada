@@ -23,7 +23,7 @@ export default function Game() {
     } else {
       setValid(false)
     }
-  },[doors])
+  },[doors, router?.query.doors, router?.query.hasGift])
 
   useEffect(() => {
     let doors = 0;
